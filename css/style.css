@@ -1,0 +1,139 @@
+.bg-header{
+    background-image: url(../images/events-heavenly-header.jpg);
+    width: 100%;
+    background-size: 100% 100%;
+    height: 100vh;
+}
+
+.bg-header .layer{
+    position: absolute;
+    background-color:  rgba(214, 46, 51, 0.6);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.header-body{
+    text-align: center;
+    font-size: 100px;
+}
+
+.side-bar{
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    right: 85%;
+    left: 0;
+    top:0;
+    bottom: 0;
+    background-color:rgba(53, 52, 52, 0.9);
+    color: white;
+    z-index: 99999;
+}
+
+.fa-xmark{
+    cursor: pointer;
+}
+.side-bar ul{
+    height: 100%;
+}
+
+.open-nav{
+    cursor: pointer;
+    display: flex;
+    position:fixed;
+    left: 15%;
+    z-index: 99999999999;
+}
+
+.singer-content div {
+    background-color: rgba(214, 46, 51, 0.6);
+    color: aliceblue;
+}
+
+.counter-bg-image{
+    background-position:center;
+}
+.bg-counter-section{
+    position: relative;
+}
+
+.layer-counter-section{
+    background-color:  rgba(214, 46, 51, 0.6);
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.layer-counter-section .row{
+    width: 70%;
+}
+
+.allicons{
+    width: 40px;
+    height: 40px;
+    border: 1px black solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition:  all .5s;
+}
+
+.allicons:hover{
+    background-color: rgba(214, 46, 51, 0.6);
+    color: white;
+}
+.contact-us{
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align:left;
+}
+
+@media screen and (max-width:1200px) {
+    .counter-content p{
+        font-size: 35px;
+    } 
+
+}
+@media screen and (max-width: 990px ){
+    .counter-content p{
+        font-size: 25px;
+    } 
+
+    .layer-counter-section .row{
+        width: 90%;
+    }
+
+    .contact-us{
+        grid-template-columns:1fr;
+        text-align:left;
+    }
+}
+@media screen and (max-width:780px) {
+
+    .layer-counter-section .row{
+        width: 100%;
+    }
+
+    .contact-us{
+        
+        grid-template-columns: 1fr;
+        gap: 0px;
+       
+    }
+}
+    
